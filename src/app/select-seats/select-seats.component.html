@@ -1,0 +1,110 @@
+<br>
+<div style="padding-left: 30px;cursor: pointer;">
+  <a routerLink="/searchBuses">Go Back</a>
+</div>
+<div class="container">
+
+  <div class="column-left ">
+    <div>
+      <p>Select Seats </p>
+    </div>
+    <div class="container1">
+      <div class="column-left ">
+
+        <div class="seat-row" *ngFor="let seat of seats">
+          <div class="seat">
+            <i class="material-icons available-seat" (click)="bookSeat(seat.nameA,seat.class,seat.id)">event_seat</i>
+            <div class="seat-info">
+              <!-- <div class="seat-number">{{ seat.id }}</div>
+              <div class="seat-name">{{ seat.nameA }}</div> -->
+            </div>
+          </div>
+          <div class="seat" *ngIf="seat.nameB">
+            <i class="material-icons available-seat" (click)="bookSeat(seat.nameB,seat.class,seat.id)">event_seat</i>
+            <div class="seat-info">
+              <!-- <div class="seat-number">{{ seat.id }}</div>
+              <div class="seat-name">{{ seat.nameB }}</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column-right ">
+        <div class="seat-row1" *ngFor="let seatName of seats2">
+          <div class="seat">
+            <i class="material-icons available-seat"
+              (click)="bookSeat(seatName.nameC,seatName.class,seatName.id)">event_seat</i>
+            <div class="seat-info">
+              <!-- <div class="seat-number">{{ seatName.id }}</div>
+              <div class="seat-name">{{ seatName.nameC }}</div> -->
+            </div>
+          </div>
+          <div class="seat" *ngIf="seatName.nameD">
+            <i class="material-icons available-seat"
+              (click)="bookSeat(seatName.nameD,seatName.class,seatName.id)">event_seat</i>
+            <div class="seat-info">
+              <!-- <div class="seat-number">{{ seatName.id }}</div>
+              <div class="seat-name">{{ seatName.nameD }}</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="column-right">
+    <div *ngIf="show">
+      <table>
+        <tr>
+          <th>Seats</th>
+          <th>Fare</th>
+          <th>Class</th>
+        </tr>
+        <tr *ngFor="let row of selectedSeats">
+          <td>{{row.name}}</td>
+          <td>{{selectBusDetails.fare}}</td>
+          <td>{{row.class}}</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <div *ngIf="show">
+      <h4>Total Fare:&nbsp;{{ calculateTotalFare()}} </h4>
+    </div><br>
+    <div class="confbtn" *ngIf="show">
+      <button class="btn btn-danger" [routerLink]="['/userInfo', selectBusDetails.id]">Confirm</button>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+  <div>
+    <h2>Bus Seat Selection</h2>
+    <p>Click on a seat to toggle its selection:</p>
+    <div class="bus-seats">
+      <div *ngFor="let seat of busSeats" class="seat" (click)="toggleSeat(seat)">
+        {{ seat }}
+      </div>
+    </div>
+  
+    <h2>Selected Seats</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Seat ID</th>
+          <th>Seat Name</th>
+          <th>Class</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let selectedSeat of selectedSeats">
+          <td>{{ selectedSeat.id }}</td>
+          <td>{{ selectedSeat.name }}</td>
+          <td>{{ selectedSeat.class }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+</div>

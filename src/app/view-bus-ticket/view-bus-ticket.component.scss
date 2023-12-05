@@ -1,0 +1,77 @@
+.container {
+    border: 1px solid black;
+    margin: 60px 450px;
+    width: 600px;
+    background-color: rgb(235, 246, 247);
+}
+
+h5 {
+    text-align: center;
+}
+
+.text {
+    padding: 10px 20px;
+}
+
+.fromTo {
+    color: rgb(255, 77, 0);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.date {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container1 {
+    border: 1px solid black;
+    margin: 60px 200px;
+    background-color: rgb(240, 238, 240);
+    box-shadow: 5px 5px 5px rgb(157, 157, 157);
+
+}
+
+.heading {
+    padding: 10px 10px;
+}
+
+.place {
+    padding: 0px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    // background-color: rgb(250, 199, 228);
+}
+
+.value {
+    padding: 0px 200px;
+    font-size: 18px;
+    font-weight: 600;
+    // background-color: rgb(250, 199, 228);
+}
+
+table{
+    border: 1px solid rgb(222, 219, 219);
+    margin: 10px 15px;
+    width: 97%;
+}
+
+th{
+    // border: 1px solid black;
+    padding: 10px 10px;
+}
+
+td{
+    padding: 20px 10px;
+
+}
+
+.note{
+    color: red;
+    font-size: 15px;
+}
+
+.notepad{
+    padding: 10px 20px;
+    text-align: center;
+}

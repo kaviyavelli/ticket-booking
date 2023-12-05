@@ -1,0 +1,375 @@
+{
+  "product-list": [
+    {
+      "id": "1",
+      "name": "Redmi Note 7S",
+      "description": "64GB/4GB",
+      "price": "14,599",
+      "imgurl": "https://androidgreek.com/wp-content/uploads/2020/08/Xiaomi-Redmi-Note-7.jpg"
+    },
+    {
+      "id": "2",
+      "name": "POCO M2 Pro",
+      "description": "120GB/8GB",
+      "price": "15,999",
+      "imgurl": "https://m.media-amazon.com/images/I/81w3UsCHEtL.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Realme Note 10 pro",
+      "description": "64GB/4GB",
+      "price": "13,876",
+      "imgurl": "https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/i/y/j/-original-imagkp8fpw35uygd.jpeg?q=90"
+    },
+    {
+      "id": "4",
+      "name": "Samsung Galaxy S20",
+      "description": "120GB/8GB",
+      "price": "18,387",
+      "imgurl": "https://m.media-amazon.com/images/I/41tg47QlycS.jpg"
+    }
+  ],
+  "Bus-list": [
+    {
+      "id": "1",
+      "name": "Green Line",
+      "deptTime": "10:00 AM",
+      "coachType": "AC",
+      "seatsAvailable": "30",
+      "fare": "1000",
+      "date": "10/11/2023",
+      "leavingOn": "Erode",
+      "GoingTo": "Chennai"
+    },
+    {
+      "id": "2",
+      "name": "Star Line",
+      "deptTime": "11:00 AM",
+      "coachType": "Non AC",
+      "seatsAvailable": "39",
+      "fare": "700",
+      "date": "11/11/2023",
+      "leavingOn": "Chennai",
+      "GoingTo": "Coimbatore"
+    },
+    {
+      "id": "3",
+      "name": "TNSRT",
+      "deptTime": "03:00 PM",
+      "coachType": "Non AC",
+      "seatsAvailable": "29",
+      "fare": "650",
+      "date": "10/11/2023",
+      "leavingOn": "Chennai",
+      "GoingTo": "Coimbatore"
+    },
+    {
+      "id": "4",
+      "name": "Star Line",
+      "deptTime": "12:00 PM",
+      "coachType": "Non AC",
+      "seatsAvailable": "36",
+      "fare": "950",
+      "date": "12/11/2023",
+      "leavingOn": "Selam",
+      "GoingTo": "Chennai"
+    },
+    {
+      "id": "5",
+      "name": "Apple Bus",
+      "deptTime": "10:00 AM",
+      "coachType": "AC",
+      "seatsAvailable": "40",
+      "fare": "1050",
+      "date": "13/11/2023",
+      "leavingOn": "Chennai",
+      "GoingTo": "Coimbatore"
+    },
+    {
+      "id": "6",
+      "name": "Green Line",
+      "deptTime": "8:00 AM",
+      "coachType": "AC",
+      "seatsAvailable": "26",
+      "fare": "950",
+      "date": "11/11/2023",
+      "leavingOn": "Erode",
+      "GoingTo": "Chennai"
+    },
+    {
+      "id": "7",
+      "name": "Star Line",
+      "deptTime": "12:00 AM",
+      "coachType": "Non AC",
+      "seatsAvailable": "20",
+      "fare": "850",
+      "date": "12/11/2023",
+      "leavingOn": "Selam",
+      "GoingTo": "Chennai"
+    },
+    {
+      "id": "8",
+      "name": "Moon Travel",
+      "deptTime": "1:30 PM",
+      "coachType": "AC",
+      "seatsAvailable": "20",
+      "fare": "900",
+      "date": "11/11/2023",
+      "leavingOn": "Erode",
+      "GoingTo": "Chennai"
+    },
+    {
+      "id": "9",
+      "name": "TNSRT",
+      "deptTime": "6:30 AM",
+      "coachType": "Non AC",
+      "seatsAvailable": "22",
+      "fare": "700",
+      "date": "09/11/2023",
+      "leavingOn": "Erode",
+      "GoingTo": "Chennai"
+    },
+    {
+      "id": "10",
+      "name": "Moon Travel",
+      "deptTime": "11:00 PM",
+      "coachType": "AC",
+      "seatsAvailable": "29",
+      "fare": "899",
+      "date": "11/11/2023",
+      "leavingOn": "Chennai",
+      "GoingTo": "Coimbatore"
+    },
+    {
+      "id": "11",
+      "name": "TNSRT",
+      "deptTime": "4:30 AM",
+      "coachType": "AC",
+      "seatsAvailable": "21",
+      "fare": "900",
+      "date": "12/11/2023",
+      "leavingOn": "Chennai",
+      "GoingTo": "Coimbatore"
+    },
+    {
+      "id": "12",
+      "name": "Star Line",
+      "deptTime": "11:00 AM",
+      "coachType": "Non AC",
+      "seatsAvailable": "25",
+      "fare": "870",
+      "date": "11/11/2023",
+      "leavingOn": "Chennai",
+      "GoingTo": "Coimbatore"
+    },
+    {
+      "id": "13",
+      "name": "Moon Travel",
+      "deptTime": "7:00 PM",
+      "coachType": "AC",
+      "seatsAvailable": "23",
+      "fare": "1050",
+      "date": "12/11/2023",
+      "leavingOn": "Selam",
+      "GoingTo": "Chennai"
+    },
+    {
+      "id": "14",
+      "name": "Green Line",
+      "deptTime": "8:00 AM",
+      "coachType": "Non AC",
+      "seatsAvailable": "30",
+      "fare": "950",
+      "date": "10/11/2023",
+      "leavingOn": "Selam",
+      "GoingTo": "Chennai"
+    },
+    {
+      "id": "15",
+      "name": "Apple",
+      "deptTime": "3:00 AM",
+      "coachType": "AC",
+      "seatsAvailable": "36",
+      "fare": "1150",
+      "date": "11/11/2023",
+      "leavingOn": "Selam",
+      "GoingTo": "Chennai"
+    }
+  ],
+  "user-list": [
+    {
+      "userName": "kaviya",
+      "email": "kaviya.v@aniyam.com",
+      "mobile": "9952420169",
+      "id": 1
+    },
+    {
+      "userName": "kavi",
+      "email": "kavi@anniyam.com",
+      "mobile": "6381449451",
+      "id": 2
+    },
+    {
+      "userName": "mythili",
+      "email": "mythili@gmail.com",
+      "mobile": "8890786532",
+      "id": 3
+    },
+    {
+      "userName": "suba",
+      "email": "suba@gmail.com",
+      "mobile": "9076210943",
+      "id": 4
+    },
+    {
+      "userName": "mani",
+      "email": "mani@gmail.com",
+      "mobile": "9657698409",
+      "id": 5
+    },
+    {
+      "userName": "ravi",
+      "email": "ravi@gmail.com",
+      "mobile": "6698707897",
+      "id": 6
+    },
+    {
+      "userName": "tina",
+      "email": "tina@gmail.com",
+      "mobile": "8978768997",
+      "id": 7
+    },
+    {
+      "userName": "savi",
+      "email": "savi@gmail.com",
+      "mobile": "7868978760",
+      "id": 8
+    },
+    {
+      "userName": "yuva",
+      "email": "yuva@gmail.com",
+      "mobile": "9879798742",
+      "id": 9
+    },
+    {
+      "userName": "indhu",
+      "email": "indhu@gmail.com",
+      "mobile": "9879868680",
+      "id": 10
+    },
+    {
+      "userName": "sri",
+      "email": "sri@gmail.com",
+      "mobile": "6778989097",
+      "id": 11
+    },
+    {
+      "userName": "ria",
+      "email": "ria@gmail.com",
+      "mobile": "9886876989",
+      "id": 12
+    },
+    {
+      "userName": "vinitha",
+      "email": "vinitha@gmail.com",
+      "mobile": "6984435259",
+      "id": 13
+    },
+    {
+      "userName": "bala",
+      "email": "bala@gmail.com",
+      "mobile": "9097876675",
+      "id": 14
+    },
+    {
+      "userName": "anish",
+      "email": "anish@gmail.com",
+      "mobile": "8965454320",
+      "id": 15
+    },
+    {
+      "userName": "sethu",
+      "email": "sethu@gmail.com",
+      "mobile": "6321454456",
+      "id": 16
+    },
+    {
+      "userName": "yumiko",
+      "email": "yumiko@gmail.com",
+      "mobile": "7119875565",
+      "id": 17
+    },
+    {
+      "userName": "hjb",
+      "email": "jhjh@jgmail.com",
+      "mobile": "9876546587",
+      "id": 18
+    },
+    {
+      "userName": "jhvj",
+      "email": "fnvkfj@gmail.com",
+      "mobile": "9979989797",
+      "id": 19
+    },
+    {
+      "userName": "kjbkj",
+      "email": "jhvjg@gmail.com",
+      "mobile": "9868767579",
+      "id": 20
+    },
+    {
+      "userName": "khbk",
+      "email": "hjvjh@gmail.com",
+      "mobile": "9987876758",
+      "id": 21
+    },
+    {
+      "userName": "kjbk",
+      "email": "jhj@gmail.com",
+      "mobile": "9879876870",
+      "id": 22
+    },
+    {
+      "userName": "nhvhj",
+      "email": "jhbjh@gmail.com",
+      "mobile": "8765679908",
+      "id": 23
+    },
+    {
+      "userName": "jhbjk",
+      "email": "jgcj@gmail.com",
+      "mobile": "9868768990",
+      "id": 24
+    },
+    {
+      "userName": "lisa",
+      "email": "lisa@anniyam.com",
+      "mobile": "7988768658",
+      "id": 25
+    },
+    {
+      "userName": "nivin",
+      "email": "nivin@gmail.com",
+      "mobile": "9524766645",
+      "id": 26
+    },
+    {
+      "userName": "nisha",
+      "email": "nisha@gmail.com",
+      "mobile": "7435376896",
+      "id": 27
+    },
+    {
+      "userName": "sri",
+      "email": "sri@gmail.com",
+      "mobile": "6062456289",
+      "id": 28
+    },
+    {
+      "userName": "Salini",
+      "email": "salini@gmail.com",
+      "mobile": "9473829930",
+      "id": 29
+    }
+  ]
+}

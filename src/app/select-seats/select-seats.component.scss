@@ -1,0 +1,102 @@
+p {
+  text-align: left;
+  padding: 10px 25px;
+}
+
+.container {
+  border: 1px solid black;
+  margin: 90px 70px;
+  display: flex;
+}
+
+.container1 {
+  border: 1px solid black;
+  width: 30%;
+  height: 70%;
+  margin: 40px 35px;
+  display: flex;
+  padding: 10px 6px;
+}
+
+.column-left {
+  flex: 1;
+  padding: 10px 15px;
+}
+
+.column-right {
+  flex: 1;
+  padding: 10px;
+}
+
+.available-seat {
+  color: rgb(139, 139, 139);
+  cursor: pointer;
+  height: 15px;
+  width: 26px;
+}
+
+.seat-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.seat-row1 {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.seat {
+  display: flex;
+  align-items: center;
+}
+
+.seat-info {
+  display: flex;
+  margin-top: 5px;
+}
+
+.fas {
+  color: black;
+}
+
+.highlight-row {
+  background-color: #ffcccc;
+  /* Light red, adjust as needed */
+}
+
+
+table {
+  border: 1px solid black;
+  margin: 10px 10px;
+}
+
+th,
+tr,td {
+  border: 1px solid black;
+  margin: 20px 20px;
+  padding: 10px 30px;
+}
+
+th{
+  font-size: 17px;
+}
+
+tr{
+  font-size: 15px;
+}
+
+.selected-seat {
+  background-color: green; 
+}
+
+.confbtn{
+  padding-left: 80px;
+}
+
+button{
+  width: 130px;
+}
+
+h4{
+  padding-left: 50px;
+}

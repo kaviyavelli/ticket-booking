@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="text">
+        <h5>Journy Details</h5>
+        <hr>
+        <br>
+        <p class="fromTo">{{busDetails.leavingOn}} to {{busDetails.GoingTo}}</p>
+        <p class="date">Date & Time : {{busDetails.date}} : {{busDetails.deptTime}}</p>
+        <p class="date">Travel's Name : {{busDetails.name}}</p>
+        <p class="date">Coach Type : {{busDetails.coachType}}</p>
+        <p class="date"> Seat No : (<span *ngFor="let seatName of seats">{{seatName.name}},</span>)</p>
+    </div>
+</div>
+
+<div class="container1">
+    <div class="heading">
+        <h5>Online Reservation</h5>
+    </div>
+    <div class="row">
+        <div class="form-group" class="col-md-6 mb-4">
+            <p class="place">{{busDetails.leavingOn}} - {{busDetails.GoingTo}} </p>
+        </div>
+        <div class="form-group" class="col-md-6 mb-4">
+            <p class="value">{{busDetails.date}}</p>
+        </div>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th>Passenger Details</th>
+                <th>Ticket Id</th>
+                <th>Seat No.</th>
+                <th>Total Fare</th>
+            </tr>
+            <tr>
+                <td>{{user}}<br>
+                    {{mobile}}<br>
+                    {{mail}}
+                </td>
+                <td>-LyWcsrEu TuCsxT23O-</td>
+                <td><span *ngFor="let seatName of seats">{{seatName.name}}&nbsp;&nbsp;</span></td>
+                <td>{{fare}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th>Bus Name</th>
+                <th>Reporting Time</th>
+                <th>Departure time</th>
+            </tr>
+            <tr>
+                <td>{{busDetails.name}}<br>
+                  coachType : {{busDetails.coachType}}</td>
+                <td>Before 30 mints</td>
+                <td>{{busDetails.deptTime}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="notepad">
+        <p class="note">** Please Bring this copy to ticket counter for collect your ticket</p>
+    </div>
+
+</div>

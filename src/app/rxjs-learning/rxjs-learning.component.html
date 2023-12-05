@@ -1,0 +1,12 @@
+<p>rxjs-learning works!</p>
+<div *ngIf="agentName">
+    {{agentName}}
+</div>
+
+<div *ngIf="orderNames">
+    {{orderNames}}
+</div>
+
+<button #btn (click)="btnEvent()">click here</button>
+
+<a href="http://localhost:62770/app-root" #getLink (mouseover)="linkObservable()">click here</a>

@@ -1,0 +1,111 @@
+<html>
+
+<body>
+    <div class="container">
+        <form [formGroup]="simpleForm" (ngSubmit)="onSubmit()">
+            <div class="space">
+                <div class="row">
+                    <div class="form-group" class="col-md-6 mb-4">
+                        <div>
+                            <label>Leaving On</label>
+                        </div>
+                        <select class="form-select" aria-label="Default select example" formControlName="leavingOn"
+                            id="val-skill" name="val-skill"
+                            [ngClass]="{ 'is-invalid': submitted && f['leavingOn'].errors }">
+                            <option value="" disabled selected>Select Place</option>
+                            <option value="Erode">Erode</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Selam">Selam</option>
+                            <option value="Dharmapuri">Dharmapuri</option>
+                        </select>
+                        <div class="invalid-feedback" *ngIf="submitted && f['leavingOn'].errors">
+                            <div *ngIf="f['leavingOn'].errors?.['required']">
+                                Leaving On is required
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group" class="col-md-6 mb-4">
+                        <div>
+                            <label>Going To</label>
+                        </div>
+                        <div>
+                            <select class="form-select" aria-label="Default select example" formControlName="goingTo"
+                                id="val-skill" name="val-skill"
+                                [ngClass]="{ 'is-invalid': submitted && f['goingTo'].errors }">
+                                <option value="" disabled selected>Select Place</option>
+                                <option value="Karur">Karur</option>
+                                <option value="Erode">Erode</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Selam">Selam</option>
+                                <option value="Coimbatore">Coimbatore</option>
+                            </select>
+                            <div class="invalid-feedback" *ngIf="submitted && f['goingTo'].errors">
+                                <div *ngIf="f['goingTo'].errors?.['required']">
+                                    Going To is required
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group picker-space" class="col-md-6 mb-4">
+                        <div>
+                            <label for="birthday">Departing On</label>
+                        </div>
+                        <div>
+                            <input type="date" id="birthday" name="birthday" class="form-control"
+                                formControlName="departingOn" id="val-skill" name="val-skill"
+                                [ngClass]="{ 'is-invalid': submitted && f['departingOn'].errors }">
+                            <div class="invalid-feedback" *ngIf="submitted && f['departingOn'].errors">
+                                <div *ngIf="f['departingOn'].errors?.['required']">
+                                    Departing On is required
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" class="col-md-6 mb-4">
+                        <button class="btn btn-success">Search Buese</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div *ngIf="table" class="container">
+        <table>
+            <tr>
+                <th>Bus Name</th>
+                <th>Dept.Time</th>
+                <th>Coach Type</th>
+                <th>Seats Available</th>
+                <th>Fare</th>
+                <th>Action</th>
+            </tr>
+            <tr *ngFor="let bus of busList">
+                <td>
+                    {{bus.name}}
+                </td>
+                <td>
+                    {{bus.deptTime}}
+                </td>
+                <td>
+                    {{bus.coachType}}
+                </td>
+                <td>
+                    {{bus.seatsAvailable}}
+                </td>
+                <td>
+                    {{bus.fare}}
+                </td>
+                <td>
+                    <button class="btn btn-primary"  [routerLink]="['/selectSeats', bus.id]">View Seats</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

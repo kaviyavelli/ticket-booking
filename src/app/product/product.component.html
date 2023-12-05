@@ -1,0 +1,28 @@
+<div class="container">
+    <table >
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+
+        <tr *ngFor="let product of prodList">
+            <td>
+                {{product.name}}
+            </td>
+            <td>
+                {{product.description}}
+            </td>
+            <td>
+                {{product.price}}
+            </td>
+            <td>
+                <button class="details-button" [routerLink]="['/productDetails', product.id]">View Details</button>
+            </td>
+        </tr>
+
+    </table>
+
+
+</div>

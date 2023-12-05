@@ -1,0 +1,28 @@
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(125% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+
+h1.heading {
+    font-size: 62px;
+    background: linear-gradient(to right, #f60acb, #12f5f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 50px;
+    font-size: 33px;
+    font-weight: 600;
+}
